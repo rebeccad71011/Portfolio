@@ -2,10 +2,28 @@
 const hamMenuBtn = document.querySelector('.header__main-ham-menu-cont')
 const smallMenu = document.querySelector('.header__sm-menu')
 const headerHamMenuBtn = document.querySelector('.header__main-ham-menu')
+const viewDemoBtn = document.getElementById("viewDemo");
+const myVid = document.getElementById("myVid");
 const headerHamMenuCloseBtn = document.querySelector(
   '.header__main-ham-menu-close'
 )
 const headerSmallMenuLinks = document.querySelectorAll('.header__sm-menu-link')
+
+viewDemoBtn.addEventListener("click", playPause);
+
+function playPause(){
+  debugger;
+  console.log("Inside");
+  if (myVid.paused) {
+    myVid.play();
+   
+    }
+else  {
+  myVid.pause(); 
+    
+    }
+
+}
 
 hamMenuBtn.addEventListener('click', () => {
   if (smallMenu.classList.contains('header__sm-menu--active')) {
