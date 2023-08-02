@@ -9,7 +9,25 @@ const headerHamMenuCloseBtn = document.querySelector(
 )
 const headerSmallMenuLinks = document.querySelectorAll('.header__sm-menu-link')
 
-viewDemoBtn.addEventListener("click", playPause);
+const comp = document.getElementById('compose-icon')
+
+function composeEmail() {
+  debugger;
+  var emailAddress = 'rebecca71011@gmail.com';
+  var subject = 'Portfolio Inquiry';
+  var body = '';
+
+  var mailtoLink = 'mailto:' + encodeURIComponent(emailAddress) +
+                   '?subject=' + encodeURIComponent(subject) +
+                   '&body=' + encodeURIComponent(body);
+
+  window.location.href = mailtoLink;
+}
+
+viewDemoBtn?viewDemoBtn.addEventListener("click", playPause) : false;
+comp?comp.addEventListener('click', function() {
+  composeEmail();
+}) : false;
 
 function playPause(){
   debugger;
