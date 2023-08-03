@@ -22,12 +22,12 @@
         <div class="header__logo-container">
           <div class="header__logo-img-cont">
             <img
-              src="./assets/png/john-doe.png"
+              src="./assets/png/RebeccaProfile.png"
               alt="Ram Maheshwari Logo Image"
               class="header__logo-img"
             />
           </div>
-          <span class="header__logo-sub">John Doe</span>
+          <span class="header__logo-sub">Rebecca Dsouza</span>
         </div>
         <div class="header__main">
           <ul class="header__links">
@@ -82,16 +82,18 @@
         </div>
       </div>
     </header>
+
+
     <section class="project-cs-hero">
       <div class="project-cs-hero__content">
         <h1 class="heading-primary">Campus Placement Predictor</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
-            Women Safety App
+            A web app built to help faculty predict student placements
           </p>
         </div>
-        <div class="project-cs-hero__cta">
-          <a href="#" class="btn btn--bg" target="_blank">View Demo</a>
+        <div  class="project-cs-hero__cta">
+          <a id="viewDemo" href="./campusPlacement.html#viewDemo" class="btn btn--bg" >View Demo</a>
         </div>
       </div>
     </section>
@@ -101,15 +103,15 @@
         <div class="project-details__content">
           
           <div class="project-details__video-demo_cont">
-            <video controls class="project-details__video-demo">
-              <source src="./assets/mp4/SheSafe.mp4" type="video/mp4">
+            <video id="myVid" controls class="project-details__video-demo">
+              <source src="./assets/mp4/CampusPlace.mp4" type="video/mp4">
               
             Your browser does not support the video tag.
             </video>
           </div>
           <div class="project-details__links" style="text-align: center;">
             <a
-              href="https://github.com/rebeccad71011/SafeLink-Women-Safety-App"
+              href="https://github.com/rebeccad71011/student-placement-predictor"
               class="btn btn--med btn--theme project-details__links-btn"
               target="_blank"
               >View on GitHub</a
@@ -120,16 +122,11 @@
             <div class="project-details__desc">
               <h3 class="project-details__content-title" style="text-align: center;"><br><br>Project Overview</h3>
               <p class="project-details__desc-para" style="text-align: center;">
-                This Women's Safety Android App was built to address the safety concerns for women.
-                 The app provides a simple and handy solution to assist females incase she finds herslef stuck in an unfavourable situation . 
-                 Key features of the app include: <br>
-              </p>
-              <p class="project-details__desc-para">
-                <strong>1. Alert System:</strong> The user can click the yellow "ALERT ONLY" button when they feel unsafe in a specific location. This action sends the location image to the registered emergency contact.<br>
-                <strong>2. High-Risk Alert:  </strong>In case of extreme danger, the user can press the red "HIGH RISK" button, which immediately calls the nearby police officer and sends an SMS to the emergency contacts with the user's location.<br>
-                <strong>3. Contact Management:</strong>  Users can add emergency contact numbers to be notified during critical situations.<br>
-                <strong>4. Personal Details: </strong> The app allows users to add personal information that could be useful in case of an emergency.<br>
-                <strong>5. Safety Tips:</strong> Users can access safety tips to enhance their awareness and precautions.<br>
+                A machine learning based web application that allows students to predict the status
+                 of their placement based on their respective profiles. The training and placement 
+                 officer (TPO) can view the prediction results in an interactive dashboard, and also
+                  filter and search for students based on various properties. An admin can easily
+                   manipulate and verify the data available in the application, if need be. <br>
               </p>
             </div> 
           </div>
@@ -137,11 +134,10 @@
             <div class="project-details__tools-used">
               <h3 class="project-details__content-title">Relevant Tags</h3>
               <div class="skills">
-                <div class="skills__skill">Android</div>
-                <div class="skills__skill">Java</div>
-                <div class="skills__skill">Telephony API</div>
-                <div class="skills__skill">Camera API</div>
-                <div class="skills__skill">Google play services location API</div>
+                <div class="skills__skill">React</div>
+                <div class="skills__skill">Python</div>
+                <div class="skills__skill">Machine Learning</div>
+                
               </div>
             </div>
 
@@ -149,14 +145,22 @@
         </div>
       </div>
     </section>
-    <footer class="main-footer">
-      <div class="main-container">
-        <div class="main-footer__upper">
+    <footer id="contact" class="main-footer">
+      <div  class="main-container">
+        <h2 style="padding-top: 7rem;" class="heading heading-sec heading-sec__mb-med">
+          <span  class="heading-sec__main heading-sec__main--lt">Contact</span>
+        </h2>
+        <div  >
+            
           <div class="main-footer__row main-footer__row-1">
-            <h2 class="heading heading-sm main-footer__heading-sm">
-              <span>Social</span>
+            <h2>
+              <a target="_blank" rel="noreferrer" href="./assets/pdf/RebeccaAugust23.pdf" class="main-footer__icon heading heading-sm main-footer__heading-sm" style="margin-bottom: 15rem;" download>
+                Resume
+                
+              </a> 
             </h2>
             <div class="main-footer__social-cont">
+            
               <a target="_blank" rel="noreferrer" href="#">
                 <img
                   class="main-footer__icon"
@@ -171,20 +175,17 @@
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
+              <a id="compose-icon" rel="noreferrer" >
+                <button style="background-color: transparent;">
                 <img
+                  
                   class="main-footer__icon"
-                  src="./assets/png/twitter-ico.png"
+                  src="./assets/png/gmailsq.png"
                   alt="icon"
                 />
+              </button>
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/yt-ico.png"
-                  alt="icon"
-                />
-              </a>
+              
               <a target="_blank" rel="noreferrer" href="#">
                 <img
                   class="main-footer__icon main-footer__icon--mr-none"
@@ -194,19 +195,13 @@
               </a>
             </div>
           </div>
-          <div class="main-footer__row main-footer__row-2">
-            <h4 class="heading heading-sm text-lt">John Doe</h4>
-            <p class="main-footer__short-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
-              tempora explicabo quae quod deserunt
-            </p>
-          </div>
         </div>
 
+        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
         <div class="main-footer__lower">
           &copy; Copyright 2021. Made by
           <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
-            >Ram Maheshwari</a
+            >Rebecca Dsouza</a
           >
         </div>
       </div>
