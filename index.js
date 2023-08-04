@@ -10,6 +10,7 @@ const headerHamMenuCloseBtn = document.querySelector(
 const headerSmallMenuLinks = document.querySelectorAll('.header__sm-menu-link')
 
 const comp = document.getElementById('compose-icon')
+const compheader = document.getElementById('compose-icon-header');
 
 function composeEmail() {
   debugger;
@@ -26,6 +27,10 @@ function composeEmail() {
 
 viewDemoBtn?viewDemoBtn.addEventListener("click", playPause) : false;
 comp?comp.addEventListener('click', function() {
+  composeEmail();
+}) : false;
+
+compheader?compheader.addEventListener('click', function() {
   composeEmail();
 }) : false;
 
