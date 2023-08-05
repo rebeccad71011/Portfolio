@@ -22,7 +22,9 @@ function composeEmail() {
                    '?subject=' + encodeURIComponent(subject) +
                    '&body=' + encodeURIComponent(body);
 
-  window.location.href = mailtoLink;
+  window.open(mailtoLink, "_blank");
+
+  //window.location.href = mailtoLink;
 }
 
 viewDemoBtn?viewDemoBtn.addEventListener("click", playPause) : false;
